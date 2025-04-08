@@ -83,3 +83,8 @@ El desafío de este proyecto es **crear un diseño limpio, usable y accesible**,
 
 Desarrollado con ❤️ por **Daniela Sofía Herrera Rojas**  
 [Campuslands, 2025]  
+
+## Visualizacion de la pagina
+
+Otro metodo de vista de la pagina (Netlify):
+https://eccomerc.netlify.app/ 
