@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Ropa</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/detail.css">
+    <!-- Fuente Encode Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con saludo y foto de perfil -->
+        <header class="header">
+            <div class="greeting">
+                <p>Hello, Welcome 👋</p>
+                <h1>Albert Stevano</h1>
+            </div>
+            <div class="profile-pic">
+                <img src="../storage/img/Profile.png" alt="Profile Photo">
+            </div>
+        </header>
+
+        <!-- Barra de búsqueda -->
+        <div class="search-container">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search clothes...">
+            </div>
+            <button class="filter-btn">
+                <i class="fas fa-sliders-h"></i>
+            </button>
+        </div>
+
+        <!-- Categorías -->
+        <div class="categories">
+            <button class="category-btn active">
+                <i class="fas fa-th-large"></i>
+                <span>All Items</span>
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-tshirt"></i>
+                <span>Dress</span>
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-tshirt"></i>
+                <span>T-Shirt</span>
+            </button>
+            <button class="category-btn">
+                <i class="fas fa-socks"></i>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Productos -->
+        <div class="products">
+            <!-- Producto 1 -->
+            <div class="product-card" data-product-id="1">
+                <div class="product-image">
+                    <img src="../storage/img/Product 1.png" alt="Modern Light Clothes">
+                    <button class="favorite-btn" onclick="toggleFavorite(event, 1)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Modern Light Clothes</h3>
+                    <p>T-Shirt</p>
+                    <div class="product-price-rating">
+                        <span class="price">$212.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="product-card" data-product-id="2">
+                <div class="product-image">
+                    <img src="../storage/img/Product 2.png" alt="Light Dress Bless">
+                    <button class="favorite-btn" onclick="toggleFavorite(event, 2)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Light Dress Bless</h3>
+                    <p>Dress modern</p>
+                    <div class="product-price-rating">
+                        <span class="price">$162.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- Producto 3 -->
+            <div class="product-card" data-product-id="3">
+                <div class="product-image">
+                    <img src="../storage/img/Product 3.png" alt="T-shirt black">
+                    <button class="favorite-btn" onclick="toggleFavorite(event, 3)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>T-shirt Black</h3>
+                    <p>outfit accessories</p>
+                    <div class="product-price-rating">
+                        <span class="price">$182.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Producto 4 -->
+            <div class="product-card" data-product-id="4">
+                <div class="product-image">
+                    <img src="../storage/img/Product 4.png" alt="Yellow Dress">
+                    <button class="favorite-btn" onclick="toggleFavorite(event, 4)">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+                <div class="product-info">
+                    <h3>Yellow Dress</h3>
+                    <p>Dress modern</p>
+                    <div class="product-price-rating">
+                        <span class="price">$182.99</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barra de navegación inferior -->
+        <nav class="bottom-nav dark">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="checkout.html" class="nav-item">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-badge"></span>
+            </a>
+            <a href="detail.html" class="nav-item">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+         
+    </div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+.container {
+    padding: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Header con botones de navegación */
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.back-btn, .favorite-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+}
+
+.favorite-btn i {
+    color: var(--color-primary);
+}
+
+/* Imagen del producto */
+.product-image {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    margin-bottom: 24px;
+    height: 360px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Información del producto */
+.product-info {
+    padding: 0 8px;
+}
+
+.product-info h1 {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.rating-views {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating i {
+    color: var(--color-accent);
+}
+
+.reviews {
+    color: var(--color-gray-dark);
+    font-size: var(--font-size-sm);
+}
+
+.product-description {
+    color: var(--color-secondary);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Selector de cantidad */
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.quantity-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--color-gray-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+}
+
+/* Selector de talla */
+.size-section, .color-section {
+    margin-bottom: 24px;
+}
+
+.size-section h3, .color-section h3 {
+    font-size: var(--font-size-md);
+    margin-bottom: 12px;
+}
+
+.size-options {
+    display: flex;
+    gap: 16px;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid var(--color-gray-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.size-btn.active {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+}
+
+/* Selector de color */
+.color-options {
+    display: flex;
+    gap: 16px;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.color-btn.active {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Botón de compra */
+.buy-btn {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-lg);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--font-size-md);
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: var(--color-gray-medium);
+    font-weight: 400;
+    font-size: var(--font-size-sm);
+    margin-left: 8px;
+}
+
+/* Modal para "Read More" */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 24px;
+    border-radius: var(--border-radius-lg);
+    max-width: 90%;
+    width: 400px;
+    position: relative;
+}
+
+.close-modal-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 16px;
+}
+
+.modal-content p {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Mostrar el modal */
+.modal.show {
+    display: flex;
+}
+.add-to-cart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #333;
+}
+
+.add-to-cart-btn i {
+    font-size: 18px;
+}
+
+.cart-text {
+    margin-right: 8px;
+}
+
+.cart-price {
+    font-weight: bold;
+    color: #fff;
+}
+
+.cart-old-price {
+    color: #aaa;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+/* Barra de navegación inferior */
+.bottom-nav {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #262222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 24px;
+    border-radius: 40px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    z-index: 100;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    margin: 0 12px;
+  }
+  
+  .icon-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #2d2727;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-circle i {
+    font-size: 20px;
+    color: white;
+  }
+  
+  .nav-item.active .icon-circle {
+    background-color: white;
+  }
+  
+  .nav-item.active .icon-circle i {
+    color: black;
+  }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - E-Commerce Ropa</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <!-- Fuente Encode Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con botón de regreso -->
+        <header class="checkout-header">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h2>Checkout</h2>
+        </header>
+
+        <!-- Lista de productos en el carrito -->
+        <div class="cart-items">
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="../storage/img/Product 1.png" alt="Modern Light Clothes">
+                </div><br>
+                <div class="item-details">
+                    <h3>Modern Light Clothes</h3>
+                    <p>T-Shirt - Talla M</p>
+                    <div class="item-price">$212.99</div>
+                </div><br>
+
+                <div class="item-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                </div>
+            </div><br>
+
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="../storage/img/Product 2.png" alt="Light Dress Bless">
+                </div><br>
+                <div class="item-details">
+                    <h3>Light Dress Bless</h3>
+                    <p>Dress modern - Talla S</p>
+                    <div class="item-price">$162.99</div>
+                </div><br>
+
+                <div class="item-quantity">
+                    <button class="quantity-btn minus">-</button>
+                    <span class="quantity">1</span>
+                    <button class="quantity-btn plus">+</button>
+                </div><br>
+            </div>
+        </div>
+
+        <!-- Cupón de descuento -->
+        <div class="discount-coupon">
+            <img src="../storage/Card.png"
+        </div>
+
+        <!-- Resumen de compra -->
+        <div class="order-summary">
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span>$375.98</span>
+            </div>
+            <div class="summary-item">
+                <span>Descuento</span>
+                <span>-$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Envío</span>
+                <span>$15.00</span>
+            </div>
+            <div class="summary-total">
+                <span>Total</span>
+                <span>$390.98</span>
+            </div>
+        </div>
+
+        <!-- Botón de pago -->
+        <button class="checkout-btn">Pay</button>
+
+        <!-- Barra de navegación inferior -->
+        <nav class="bottom-nav dark">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="checkout.html" class="nav-item">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-badge"></span>
+            </a>
+            <a href="detail.html" class="nav-item">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+         
+    </div>
+
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

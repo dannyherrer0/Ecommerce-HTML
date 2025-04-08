@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto - E-Commerce Ropa</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+    <!-- Fuente Encode Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con botón de regreso -->
+        <header class="detail-header">
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h2>Detalle del Producto</h2>
+            <button class="favorite-btn" id="detailFavoriteBtn">
+                <i class="fas fa-heart"></i>
+            </button>
+        </header>
+
+        <!-- Detalle del producto -->
+        <div class="product-detail">
+            <div class="product-image-gallery">
+                <img src="../storage/img/Product 2.png" alt="Product" id="productImage" class="main-image">
+                <div class="image-thumbnails">
+                    <div class="thumbnail active" data-src="../storage/img/Product 1.png"></div>
+                    <div class="thumbnail" data-src="../storage/img/Product 2.png"></div>
+                    <div class="thumbnail" data-src="../storage/img/Product 3.png"></div>
+                </div>
+            </div>
+
+            <div class="product-info-detail">
+                <h1 id="productName">Modern Light Clothes</h1>
+                <p id="productCategory">T-Shirt</p>
+                
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>5.0 (150 reviews)</span>
+                </div>
+
+                <div class="product-description">
+                    <h3>Descripción</h3>
+                    <p>
+                        Esta prenda moderna y ligera es perfecta para el uso diario. 
+                        Fabricada con materiales de alta calidad que garantizan comodidad y durabilidad.
+                        Diseño versátil que combina con cualquier estilo.
+                    </p>
+                </div>
+
+                <div class="product-size">
+                    <h3>Talla</h3>
+                    <div class="size-options">
+                        <button class="size-btn">S</button>
+                        <button class="size-btn active">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn">XL</button>
+                    </div>
+                </div>
+
+                <div class="product-colors">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" style="background-color: #3E3E3E;"></button>
+                        <button class="color-btn active" style="background-color: #7A7A7A;"></button>
+                        <button class="color-btn" style="background-color: #BEBEBE;"></button>
+                    </div>
+                </div>
+
+                <div class="product-price-cart">
+                    <div class="price-container">
+                        <p>Precio</p>
+                        <h2 id="productPrice">$212.99</h2>
+                    </div>
+                    <a href="checkout.html" class="add-to-cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-text">Añadir al carrito</span> | <span class="cart-price">$212.99</span>
+                        <span class="cart-old-price">$259.99</span>
+                    </a>
+                </div>
+                
+
+        <!-- Barra de navegación inferior -->
+        <nav class="bottom-nav dark">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="checkout.html" class="nav-item">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="cart-badge"></span>
+            </a>
+            <a href="detail.html" class="nav-item">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-user"></i>
+            </a>
+        </nav>
+         
+    </div>
+
+    <script src="../js/detail.js"></script>
+</body>
+</html>
